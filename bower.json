@@ -1,0 +1,25 @@
+{
+  "name": "Sanes HTML",
+  "description": "",
+  "main": "app.js",
+  "authors": [
+    "usabit <contato@usabit.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.2",
+    "jquery.maskedinput": "^1.4.1",
+    "fotorama": "^4.6.4",
+    "font-awesome": "^4.6.3"
+  }
+}

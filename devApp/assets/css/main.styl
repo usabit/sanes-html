@@ -1,0 +1,22 @@
+flex-version = flex
+support-for-ie = false
+vendor-prefixes = official
+
+@import 'nib'
+@import 'jeet'
+@import 'rupture'
+
+rupture.mobile-cutoff = 768px
+rupture.desktop-cutoff = 1050px
+rupture.hd-cutoff = 1400px
+
+rupture.scale =        0        768px       1050px      1400px
+
+//                     └────┬────┘ └────┬────┘ └────┬────┘ └────┬────
+// Slice numbers:           1           2           3           4    
+rupture.scale-names =   'mobile'     'tablet'   'desktop'      'hd'   
+
+@import "_definitions/*";
+@import "_partials/*";
+@import "_elements/*";
+// @import "pages/*";

@@ -1,0 +1,50 @@
+.hamburger-menu-flex
+  display none
+  align-self center
+  size(40px)
+  background alpha(navy, 0)
+  flex-direction column
+  align-items center
+  justify-content space-around
+  padding 5px
+  transition all 0.2s ease
+  
+  +below('tablet')
+    display flex
+  
+  span
+    size(100% 4px)
+    background navy
+    display block    
+    transition all .2s ease
+    position relative
+    
+    &:before
+    &:after
+      content ''
+      display block
+      size(100% 4px)
+      background @background
+      position absolute
+      transition all .2s ease
+
+    &:before
+      top -10px
+      
+    &:after
+      top 10px
+    
+  &.open
+    transform translateX(200px)
+    background-color navy
+
+    span
+      background alpha(black, 0)
+      &:before
+        top 0
+        transform rotateZ(45deg)
+        background-color white
+      &:after
+        top 0
+        transform rotateZ(-45deg)
+        background-color white

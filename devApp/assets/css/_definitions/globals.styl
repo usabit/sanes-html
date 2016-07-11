@@ -1,0 +1,25 @@
+html
+body
+  box-sizing border-box
+  font-nunito()
+  font-size 12px
+  
+*
+  flex-shrink 0
+  
+.main-wrapper
+  center(1440px)
+  width 90%
+  
+main
+  z-index 499
+  margin-top 150px
+  
+  +below(1280px)
+    margin-top 120px
+  
+  +at('tablet')
+    margin-top 100px
+    
+  +at('mobile')
+    margin-top 80px

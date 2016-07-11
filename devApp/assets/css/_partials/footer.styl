@@ -1,0 +1,44 @@
+footer.sanes-footer
+  background-color alpha(black, .1)
+  
+  .image-tiles
+    margin 0
+    padding 0
+    img
+      margin 0
+      display block
+
+  .sanes-information
+    border-top 5px solid brown
+    position relative
+    padding 26px 0 20px 0
+    font-old()
+    color #653e17
+    
+    &:before
+      content ''
+      width 100%
+      height 2px
+      position absolute
+      top 5px
+      left 0
+      background-color brown
+
+    h1
+      text-transform uppercase
+      font-size 2rem
+      margin-bottom 20px
+
+      +at('mobile')
+        font-size 1.5rem
+      
+    p
+      margin 5px 0
+      font-size 1.6rem
+      
+      +at('mobile')
+        font-size 1.2rem
+      
+      a
+        color inherit
+        

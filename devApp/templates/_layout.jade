@@ -1,0 +1,16 @@
+doctype html
+html(lang="pt-br")
+  head
+    block extraHead
+    include _partials/head
+
+  body.body
+
+    include _partials/header
+
+    main
+      block content
+
+    include _partials/footer
+
+    block extraFooter

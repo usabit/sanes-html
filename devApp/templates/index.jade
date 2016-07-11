@@ -1,0 +1,23 @@
+extend _layout
+
+block extraHead
+  title Sanes
+  
+block content
+
+  section.page-index
+
+    .main-wrapper #[p(style='text-align:center') Banner]
+
+    include _partials/index/product-category-list
+    include _partials/index/product-display-list
+    include _partials/index/about-sanes
+    include _partials/squares
+    include _partials/index/recipe-index
+    include _partials/index/news-display
+
+
+
+  //- include _partials/fonts
+
+block extraFooter

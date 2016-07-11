@@ -1,0 +1,46 @@
+a.btn
+button.btn
+  
+  text-decoration none
+  font-nunito()
+  
+  // colors
+
+  &.navy
+    background-color navy
+    color white
+
+  // forms
+
+  &.ribbon
+    font-weight 700
+    padding 0 5px
+    height 36px
+    display inline-flex
+    align-items center
+    font-size 1.33rem
+    position relative
+    margin 0 20px
+    
+    &:after
+    &:before
+      content ''
+      display block
+      position absolute
+      bottom 0
+      border-top 18px solid navy
+      border-right 10px solid navy
+      border-bottom 18px solid navy
+      border-left 10px solid navy
+
+    &:before
+      left -20px
+      border-left-color transparent
+      
+    &:after
+      right -20px
+      border-right-color transparent
+      
+    &:hover
+      opacity .8
+      transition all .2s ease

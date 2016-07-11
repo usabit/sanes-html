@@ -1,0 +1,46 @@
+ul.product-display-list
+  display flex
+  flex-wrap wrap
+  
+  li.product-display-item
+    flex 1
+    
+    +at('mobile')
+      min-width 50%
+    
+    .product-name
+      background-color navy
+      color white
+      padding 9px 0
+      font-size 1.16rem
+      font-weight 400
+      text-align center
+      wnite-space nowrap
+      text-transform uppercase
+      
+      +at('tablet')
+        font-size 1rem
+      
+      +at('mobile')
+        font-size .85rem
+      
+    .image-wrap
+      width 100%
+      
+      display flex
+      align-items center
+      justify-content center
+      overflow hidden
+
+    img
+      min-width 100%
+      max-width 100%
+      flex-shrink 0
+      
+    &:nth-child(even)
+      .product-name
+        background-color navy - 30%
+        
+    +below('tablet')
+      &:nth-child(5n)
+        display none

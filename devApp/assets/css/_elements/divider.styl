@@ -1,0 +1,23 @@
+div.divider
+  position relative
+  center(350px)
+
+  height 2px
+  background-image linear-gradient(left, transparent, red, transparent)
+  margin 30px auto
+  
+  &:before
+    content ''
+    position absolute
+    display block
+    left 50%
+    top 50%
+    transform translate3d(-50%, -50%, 0) rotate(45deg)
+    
+    size(10px)
+    background-color red
+  
+  &.navy
+    background-image linear-gradient(left, transparent 5%, navy, transparent 95%)
+    &:before
+      background-color navy

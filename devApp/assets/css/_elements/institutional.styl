@@ -1,0 +1,55 @@
+section.institutional
+  margin-top 40px
+  
+  .content-wrap
+    display flex
+    margin 20px 0
+    
+    .image-wrap
+      order 3
+      flex 60
+      margin 0 0 30px 30px
+      
+      img
+        width 100%
+      
+    .text-wrap
+      order 2
+      flex 40
+      text-align right
+      
+      h3
+        color orange
+        text-transform uppercase
+        font-style italic
+        font-nunito()
+        font-size 1.5rem
+        line-height 1.2
+        
+      p
+        font-size 1.7rem
+        font-weight 400
+        line-height 1.4
+        font-style italic
+        font-old()
+        margin 15px 0
+        color alpha(#4e4e4e, .8)
+      
+    &.inverted
+      .image-wrap
+        order 1
+        margin 0 30px 30px 0
+        
+      .text-wrap
+        text-align left
+    
+    +below('tablet')
+      flex-direction column
+      
+      .image-wrap
+        order 1
+        margin 20px 0 !important
+        text-align center
+        
+      .text-wrap
+        text-align left

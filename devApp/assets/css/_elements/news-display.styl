@@ -5,8 +5,11 @@ section.news-display
       
       margin-bottom 10px
       
-      +at('mobile')
+      +at('tablet')
         col(1/2, gutter: 3, uncycle: 4, cycle: 2)
+        
+      +at('mobile')
+        stack()
       
       a
         text-decoration none

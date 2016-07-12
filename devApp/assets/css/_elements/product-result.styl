@@ -1,0 +1,37 @@
+section.product-result
+  margin 30px 0
+ul.product-result-list
+  display flex
+  flex-wrap wrap
+  align-items center
+  justify-content flex-start
+  
+  li.product-result-item
+    width 185px
+    margin 10px
+    
+    +at('mobile')
+      width 47%
+      margin 10px auto
+    
+    img
+      width 100%
+    
+    .text-wrap
+      margin-top 7px
+      
+      p
+        margin 5px 0
+    p.product-name
+      color navy
+      font-nunito()
+      font-weight 700
+      font-size 1.2rem
+      text-transform uppercase
+      
+    p.package
+      font-size 1.16rem
+      color orange
+      
+    p.package-info
+      color alpha(black, .7)

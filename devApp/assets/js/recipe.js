@@ -10,6 +10,7 @@
 
     // pegando o src da imagem
     var recipeImage = _this.currentSrc;
+    console.log('recipeImage', recipeImage);
 
     // removendo a imagem do DOM
     $(_this).remove();

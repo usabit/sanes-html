@@ -1,0 +1,20 @@
+extend _layout
+
+
+block extraHead
+  title Sanes
+  
+block content
+
+  - var newsTitleBefore = 'Mais'
+  
+  section.page-news
+
+    include _partials/news/featured-news
+    include _partials/news/cards-news
+    include _partials/index/news-display
+    include _partials/news/news-simple-display
+
+
+  //- include _partials/fonts
+block extraFooter

@@ -1,0 +1,90 @@
+section.page-news-detail
+  margin-bottom 30px
+  .main-wrapper
+    padding 20px
+    
+  nav.navigation 
+    margin 40px 0
+    
+    a
+      padding 2px 0
+      
+      &:hover
+        border-bottom 2px solid alpha(white, .7)
+    
+    .voltar
+      position relative
+      color white
+      text-decoration none
+      font-size 1.33rem
+      margin-left 14px
+      
+      &:after
+        position absolute
+        content ''
+        display block
+        size(0)
+        top 50%
+        transform translateY(-50%)
+        right 100%
+        margin-right 7px
+        
+        border-top: 7px solid transparent
+        border-bottom: 7px solid transparent         
+        border-right:7px solid white
+        
+  .news-detail-wrap
+    
+    .news-title
+      font-size 4rem
+      color navy
+      font-style italic
+      font-weight 400
+      letter-spacing -1px
+      
+    .news-info
+      margin 10px 0
+      color alpha(black, .5)
+      font-size 1.43rem
+      
+      .date:after
+        content ' | '
+
+      .type
+        text-transform uppercase
+        
+    .news-content-wrap
+      border 1px dashed green
+      display flex
+      
+      > *
+        flex 1
+        
+      .text-wrap
+        padding 20px
+        background-color alpha(white, .3)
+        .sub-title
+          font-size 2.8rem
+          color navy
+          font-style italic
+          font-weight 400
+          letter-spacing -1px
+          line-height 1.1
+          
+        p
+          font-size 1.42rem
+          color alpha(black, .9)
+          line-height 1.3
+          margin 12px 0
+
+      .image-wrap
+        background-color alpha(black, .3)
+        margin-right 20px
+
+
+
+
+
+
+
+

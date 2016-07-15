@@ -1,43 +1,42 @@
-section.news-display
-  ul.news-list
-    li.news-item
-      col(1/4, gutter: 1, cycle: 4)
+ul.photo-and-brief-list
+  li.photo-and-brief-item
+    col(1/4, gutter: 1, cycle: 4)
+    
+    margin-bottom 10px
+    
+    +at('tablet')
+      col(1/2, gutter: 3, uncycle: 4, cycle: 2)
       
-      margin-bottom 10px
-      
-      +at('tablet')
-        col(1/2, gutter: 3, uncycle: 4, cycle: 2)
-        
-      +at('mobile')
-        stack()
-      
-      a
-        text-decoration none
-      
-      .image-wrap
-        overflow hidden
-        margin-bottom 5px
+    +at('mobile')
+      stack()
+    
+    a
+      text-decoration none
+    
+    .image-wrap
+      overflow hidden
+      margin-bottom 5px
 
-        img
-          max-width 100%
-          display block
-          margin 0
-          
-      .date-type
-        text-transform uppercase
-        font-weight 300
+      img
+        max-width 100%
+        display block
+        margin 0
         
-        .date
-          color #a07e5c
+    .date-type
+      text-transform uppercase
+      font-weight 300
+      
+      .date
+        color #a07e5c
+        
+      .type
+        color #837c75
+        &:before
+          content ' | '
           
-        .type
-          color #837c75
-          &:before
-            content ' | '
-            
-      .title
-        font-size 1.3rem
-        color #754c24
-        font-weight 400
-        margin-top 5px
-        line-height 1.2
+    .title
+      font-size 1.3rem
+      color #754c24
+      font-weight 400
+      margin-top 5px
+      line-height 1.2

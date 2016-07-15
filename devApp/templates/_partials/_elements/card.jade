@@ -1,0 +1,13 @@
+.card
+  .image-wrap
+    .content
+      img(src="#{cardImg}", alt="")
+  .text-wrap
+    h3.card-title #{cardTitle}
+    .card-info
+      span.date #{cardDate}
+      span.type #{cardType}
+    p.card-subtitle #{cardSubtitle}
+
+    .center
+      a.btn.ribbon.navy(href="#{cardHref}") leia mais

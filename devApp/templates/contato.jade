@@ -1,0 +1,50 @@
+extend _layout
+
+
+block extraHead
+  title Sanes
+  
+block content
+  
+  section.contact
+    .main-wrapper
+      nav.contact-type-list
+        a.active(data-form="comercial") Comercial
+        a(data-form="rh") Recursos Humanos
+        a(data-form="pre-cadastro") Pré-cadastro
+        a(data-form="sac") SAC
+      form(action="#" name="comercial")
+        label.input-group.full(for="comercial-nome")
+          span Exemplo de Select:
+          select #[option Option 1] #[option Option 2]
+        label.input-group.full(for="comercial-nome")
+          span Nome:
+          input#comercial-nome(type="text")
+        label.input-group.full(for="comercial-nome-empresa")
+          span Nome da Empresa:
+          input#comercial-nome-empresa(type="text")
+        label.input-group.half(for="comercial-cnpj")
+          span CNPJ:
+          input#comercial-cnpj(type="text")
+        label.input-group.half(for="comercial-endereco")
+          span Endereço:
+          input#comercial-endereco(type="text")
+        label.input-group.half(for="comercial-telefone")
+          span Telefone:
+          input#comercial-telefone(type="text")
+        label.input-group.half(for="comercial-email")
+          span E-mail:
+          input#comercial-email(type="text")
+        label.input-group.full(for="comercial-mensagem")
+          span Mensagem:
+          textarea#comercial-mensagem(name="mensagem", cols="30", rows="10")
+
+        .center.margin
+          button.btn.send-form Enviar
+      form(action="#" name="rh") RH
+      form(action="#" name="pre-cadastro") Pré Cadastro
+      form(action="#" name="sac") Sac
+
+  //- include _partials/fonts
+block extraFooter
+  script(src="")

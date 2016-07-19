@@ -6,8 +6,8 @@ section.recipe-index
 
     .recipe-wrap
       .image-wrap
-        .image-container
-          img(src="http://www.bacalhaudanoruega.com.br/var/ezflow_site/storage/images/b2c/receitas/brasil/bacalhau-da-noruega-%C3%A0-gomes-de-s%C3%A1/555130-13-por-BR/Bacalhau-da-Noruega-%C3%A0-Gomes-de-S%C3%A1_large.jpg", alt="Bagalhau a Gomes de Sá")
+        // a imagem é via background para poder utilizar o background-size cover e background position
+        .image-container(style='background-image: url("http://www.bacalhaudanoruega.com.br/var/ezflow_site/storage/images/b2c/receitas/brasil/bacalhau-da-noruega-%C3%A0-gomes-de-s%C3%A1/555130-13-por-BR/Bacalhau-da-Noruega-%C3%A0-Gomes-de-S%C3%A1_large.jpg")')
       .text-wrap
         h3.recipe-step Ingredientes
 
@@ -24,6 +24,6 @@ section.recipe-index
   .center.squares
     span.square.navy.medium
     span.square.navy.big
-    a.btn.ribbon.navy(href="#") mais receitas
+    a.btn.ribbon.navy(href="gastronomia.html") mais receitas
     span.square.navy.big
     span.square.navy.medium

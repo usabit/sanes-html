@@ -5,15 +5,14 @@ ul.product-result-list
   flex-wrap wrap
   align-items center
   justify-content flex-start
+  margin-right -25px
+  
+  +at('mobile')
+    margin-right 0
   
   li.product-result-item
-    width 195px
-    margin 10px
-    padding 10px
-    border 2px solid transparent
-    
-    &:hover
-      border-color orange
+    width 219px
+    margin 0 25px 25px 0
     
     +at('mobile')
       width 47%

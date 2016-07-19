@@ -1,0 +1,126 @@
+section.contact .main-wrapper
+  padding 80px 0 60px 0
+
+nav.contact-type-list
+  background-color orange
+  display flex
+  overflow hidden
+  
+  a
+    flex 1
+    text-align center
+    padding 12px 0
+    color white
+    text-transform uppercase
+    text-decoration none
+    font-weight 400
+    font-size 1.667rem
+    background-color orange + 50%
+    position relative
+    z-index 0
+    text-indent 9px
+    cursor pointer
+    
+    &:first-child
+      z-index 10
+    &:nth-child(2)
+      z-index 9
+    &:nth-child(3)
+      z-index 8
+    &:nth-child(4)
+      z-index 7
+    &:nth-child(5)
+      z-index 6
+    &:nth-child(6)
+      z-index 5
+    
+      
+    &:after
+      display block
+      content ''
+      position absolute
+      top 0
+      bottom 0
+      right -9px
+      width 20px
+      background-color orange + 50%
+      transform skewX(20deg)
+      box-shadow 3px 0 3px 0 alpha(black, .1)
+      
+    &:last-child
+      &:after
+        content none
+      
+    &:hover
+      background-color orange + 30%
+      &:after
+        background-color orange  + 30%
+
+    &.active
+      background-color orange
+      &:after
+        background-color orange
+        
+section.contact form
+  background-color orange
+  display flex
+  flex-wrap wrap
+  padding 50px 20px 20px 20px
+
+  &[name='rh']
+  &[name='pre-cadastro']
+  &[name='sac']
+    display none
+  
+  label.input-group
+    padding 10px
+    &.full
+      width 100%
+    &.half
+      width 50%
+    
+    display flex
+    flex-direction column
+    font-size 1.5rem
+    
+    span
+      color white
+      margin-bottom 5px
+    
+    input
+    textarea
+    select
+      border none
+      outline 0
+      font-size 1.5rem
+      resize none
+      padding 7px 12px
+      border-radius 6px
+      border 1px solid transparent
+      color navy
+      
+      &:hover
+        border 1px solid alpha(navy, .5)
+      &:focus
+        border 1px solid navy
+        
+    select
+      font-size 1.4rem
+      height 37px
+      appearance none
+      background-color #fff
+      background-image url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2216%22%20height%3D%228%22%20viewBox%3D%220%200%2016%208%22%3E%3Cpolygon%20fill%3D%22%23999999%22%20points%3D%228%2C0%2016%2C0%2012%2C4%208%2C8%204%2C4%200%2C0%20%22/%3E%3C/svg%3E')
+      background-repeat no-repeat
+      background-position right 10px center
+      padding-right 1.5em
+      width 100%
+
+      &:focus
+      &:hover
+        outline none
+
+      // Fix Firefox dotted focusring
+      &:-moz-focusring
+        color transparent
+        text-shadow 0 0 0 #000
+

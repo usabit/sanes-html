@@ -1,6 +1,7 @@
 li.photo-and-brief-item
   a(href="#{itemHref}")
     .image-wrap
+      // aqui é importante que as imagens tenham o mesmo tamanho. algum plugin que corte as imagens para um tamanho que vc definir deve ajudar
       img(src="#{itemSrc}", alt="#{itemTitle}")
     .date-type
       span.date #{itemDate}

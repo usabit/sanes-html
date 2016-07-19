@@ -14,9 +14,9 @@ block content
         a(data-form="pre-cadastro") Pré-cadastro
         a(data-form="sac") SAC
       form(action="#" name="comercial")
-        label.input-group.full(for="comercial-nome")
+        label.input-group.full(for="exemplo-select")
           span Exemplo de Select:
-          select #[option Option 1] #[option Option 2]
+          select#exemplo-select #[option Option 1] #[option Option 2]
         label.input-group.full(for="comercial-nome")
           span Nome:
           input#comercial-nome(type="text")
@@ -38,6 +38,8 @@ block content
         label.input-group.full(for="comercial-mensagem")
           span Mensagem:
           textarea#comercial-mensagem(name="mensagem", cols="30", rows="10")
+
+        .clearfix
 
         .center.margin
           button.btn.send-form Enviar

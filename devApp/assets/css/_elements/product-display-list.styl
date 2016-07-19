@@ -1,13 +1,16 @@
 ul.product-display-list
-  display flex
-  flex-wrap wrap
+  display block
+  overflow hidden
   
   li.product-display-item
-    flex 1
+    col(1/5, gutter: 0)
     
+    +at('tablet')
+      col(1/4, gutter:0)
+      
     +at('mobile')
-      min-width 50%
-    
+      col(1/2, gutter: 0)
+
     .product-name
       background-color navy
       color white

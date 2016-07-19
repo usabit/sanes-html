@@ -1,10 +1,16 @@
 section.contact .main-wrapper
   padding 80px 0 60px 0
+  +at('mobile')
+    padding 40px 0 30px 0
 
 nav.contact-type-list
   background-color orange
   display flex
   overflow hidden
+  
+  +at('mobile')
+    flex-direction column
+    margin-bottom 20px
   
   a
     flex 1
@@ -20,6 +26,10 @@ nav.contact-type-list
     z-index 0
     text-indent 9px
     cursor pointer
+    
+    +below('tablet')
+      font-size 1.2rem
+      text-shadow 1px 1px 2px alpha(black, .5)
     
     &:first-child
       z-index 10
@@ -47,6 +57,9 @@ nav.contact-type-list
       transform skewX(20deg)
       box-shadow 3px 0 3px 0 alpha(black, .1)
       
+    &.no-shadow:after
+      box-shadow inset -3px 0 3px 0 alpha(black, .1)
+      
     &:last-child
       &:after
         content none
@@ -66,6 +79,9 @@ section.contact form
   display flex
   flex-wrap wrap
   padding 50px 20px 20px 20px
+  
+  +at('mobile')
+    padding 10px
 
   &[name='rh']
   &[name='pre-cadastro']
@@ -78,6 +94,9 @@ section.contact form
       width 100%
     &.half
       width 50%
+      
+    +below('mobile')
+      width 100% !important
     
     display flex
     flex-direction column
